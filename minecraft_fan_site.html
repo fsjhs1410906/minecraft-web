@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BlockWorld — Minecraft Fan Site</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,"Microsoft JhengHei",sans-serif;background:#101510;color:#fff}
+nav{position:sticky;top:0;z-index:10;background:#151b16dd;backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:space-between;padding:14px 6%;border-bottom:1px solid #3c493d}
+.logo{font-size:25px;font-weight:900;letter-spacing:1px;text-shadow:3px 3px #000}
+.logo span{color:#62c64d}
+nav a{color:#fff;text-decoration:none;margin-left:24px;font-weight:700}
+nav a:hover{color:#72d65d}
+.hero{min-height:78vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:70px 20px;background:
+linear-gradient(#0005,#0009),
+radial-gradient(circle at 50% 20%,#4b8748 0,#244426 35%,#111 78%)}
+.hero h1{font-size:clamp(48px,9vw,100px);font-weight:1000;text-shadow:6px 7px #000;margin-bottom:20px}
+.hero p{font-size:20px;max-width:650px;margin:auto;line-height:1.6}
+.buttons{margin-top:30px}
+.btn{display:inline-block;padding:15px 28px;margin:7px;border-radius:5px;text-decoration:none;font-weight:900;border:2px solid #111;box-shadow:0 5px #000;background:#62c64d;color:#fff}
+.btn.dark{background:#303830}
+.btn:hover{transform:translateY(-2px)}
+section{padding:70px 6%;max-width:1200px;margin:auto}
+.title{text-align:center;font-size:38px;margin-bottom:35px;text-shadow:3px 3px #000}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.card{background:#202820;border:2px solid #465346;border-radius:8px;padding:26px;box-shadow:0 7px 0 #090b09}
+.card h3{font-size:23px;margin-bottom:12px}
+.card p{color:#cbd3cb;line-height:1.6}
+.icon{font-size:48px;margin-bottom:15px}
+.news{background:#171d17}
+footer{text-align:center;padding:35px;background:#090b09;color:#9ca59d}
+.notice{max-width:900px;margin:30px auto 0;background:#352f18;border:1px solid #75662c;padding:14px;border-radius:6px;color:#eee}
+</style>
+</head>
+<body>
+<nav>
+  <div class="logo">BLOCK<span>WORLD</span></div>
+  <div>
+    <a href="#game">遊戲</a>
+    <a href="#download">下載</a>
+    <a href="#news">最新消息</a>
+    <a href="#community">社群</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div>
+    <h1>MINECRAFT</h1>
+    <p>探索、建造、生存，打造屬於你的方塊世界。</p>
+    <div class="buttons">
+      <a class="btn" href="#game">開始探索</a>
+      <a class="btn dark" href="#news">查看消息</a>
+    </div>
+    <div class="notice">這是一個 Minecraft 風格的粉絲網站範例，不是 Mojang / Microsoft 官方網站。</div>
+  </div>
+</header>
+
+<section id="game">
+  <h2 class="title">探索你的世界</h2>
+  <div class="grid">
+    <article class="card"><div class="icon">🌲</div><h3>生存模式</h3><p>收集資源、製作工具，在危險的夜晚保護自己。</p></article>
+    <article class="card"><div class="icon">🏰</div><h3>創造模式</h3><p>使用無限資源自由建築，發揮你的想像力。</p></article>
+    <article class="card"><div class="icon">⛏️</div><h3>探索世界</h3><p>穿越森林、山脈、洞穴與海洋，發現未知的地方。</p></article>
+    <article class="card"><div class="icon">👥</div><h3>多人遊玩</h3><p>和朋友一起建造基地、冒險與分享你的作品。</p></article>
+  </div>
+</section>
+
+
+<section id="download">
+  <h2 class="title">下載 Minecraft</h2>
+  <div class="grid">
+    <article class="card">
+      <div class="icon">🖥️</div>
+      <h3>Windows / PC</h3>
+      <p>在電腦上體驗 Minecraft，支援 Java Edition 與 Bedrock Edition。</p>
+      <a class="btn" href="https://www.minecraft.net/download" target="_blank" rel="noopener">前往官方下載</a>
+    </article>
+    <article class="card">
+      <div class="icon">📱</div>
+      <h3>手機與平板</h3>
+      <p>在支援的行動裝置上遊玩 Bedrock Edition。</p>
+      <a class="btn" href="https://www.minecraft.net/download" target="_blank" rel="noopener">查看官方版本</a>
+    </article>
+    <article class="card">
+      <div class="icon">🎮</div>
+      <h3>主機版本</h3>
+      <p>前往官方網站查看 PlayStation、Xbox、Nintendo Switch 等平台資訊。</p>
+      <a class="btn" href="https://www.minecraft.net/download" target="_blank" rel="noopener">查看平台</a>
+    </article>
+
+    <article class="card">
+      <div class="icon">📦</div>
+      <h3>LunarSexy 2.4.3</h3>
+      <p>下載你提供的 APK 檔案。</p>
+      <a class="btn" href="LunarSexy_2.4.3.apk" download>下載 APK</a>
+    </article>
+    <article class="card">
+      <div class="icon">🌙</div>
+      <h3>Lunar Proxy</h3>
+      <p>適用於 Minecraft Bedrock Edition 的 Lunar Proxy，可在官方網站查看支援平台與下載資訊。</p>
+      <a class="btn" href="https://lunarproxy.net/" target="_blank" rel="noopener">前往 Lunar Proxy</a>
+    </article>
+  </div>
+  <div class="notice">下載按鈕會前往 Minecraft 官方網站；請從官方來源取得遊戲，不要下載來路不明的檔案。</div>
+</section>
+
+<section id="news" class="news">
+  <h2 class="title">最新消息</h2>
+  <div class="grid">
+    <article class="card"><h3>🌿 Wilderness Bound</h3><p>探索充滿氣氛的森林，尋找遺棄的營地並使用新的建築方塊。</p></article>
+    <article class="card"><h3>🛒 Marketplace</h3><p>瀏覽各種皮膚、材質包與 Bedrock Add-Ons。</p></article>
+    <article class="card"><h3>🎮 更多遊戲</h3><p>Minecraft 世界還包含 Dungeons、Legends 與 Education 等作品。</p></article>
+  </div>
+</section>
+
+<section id="community">
+  <h2 class="title">玩家社群</h2>
+  <div class="grid">
+    <article class="card"><div class="icon">🧱</div><h3>分享建築</h3><p>展示你的城市、城堡、紅石機關與創意作品。</p></article>
+    <article class="card"><div class="icon">💡</div><h3>學習技巧</h3><p>從新手教學開始，逐步學會建造與探索。</p></article>
+    <article class="card"><div class="icon">🌎</div><h3>一起冒險</h3><p>和朋友建立自己的世界，創造更多回憶。</p></article>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 BlockWorld Fan Site · Minecraft is a trademark of Mojang Studios / Microsoft.</p>
+</footer>
+</body>
+</html>
